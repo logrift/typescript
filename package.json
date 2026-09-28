@@ -1,0 +1,25 @@
+{
+  "name": "@logrift/client",
+  "version": "0.1.0",
+  "description": "Buffered TypeScript client for the Logrift log collector",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/logrift/javascript.git"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "engines": { "node": ">=18" },
+  "devDependencies": { "typescript": "^5.8.0" }
+}
